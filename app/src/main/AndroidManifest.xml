@@ -13,8 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TesteFirebase"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".view.formcadastro.FormCadastro"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
