@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/rodri/AndroidStudioProjects/TesteFirebase/app/src/main/res/layout/activity_form_cadastro.xml" value="0.17" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TesteFirebase/app/src/main/res/layout/activity_form_login.xml" value="0.15896739130434784" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/TesteFirebase/app/src/main/res/layout/activity_main.xml" value="0.1082427536231884" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TesteFirebase/app/src/main/res/layout/activity_tela_principal.xml" value="0.15896739130434784" />
       </map>
     </option>
   </component>
