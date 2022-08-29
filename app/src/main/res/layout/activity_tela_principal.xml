@@ -20,5 +20,19 @@
         android:padding="15dp"
         android:layout_marginTop="20dp"
         />
+    <Button
+        android:id="@+id/bt_gravarDadosDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gravar"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        />
 
 </LinearLayout>
