@@ -41,5 +41,14 @@ class TelaPrincipal : AppCompatActivity() {
 
                 }
         }
+
+        binding.btLerDadosDB.setOnClickListener {
+            db.collection("Usuários").document("Marcos").addSnapshotListener{ documento, error ->
+                if (documento != null){
+                    binding.txtResultado.text = documento.getString("nome")
+                }
+
+            }
+        }
     }
 }
