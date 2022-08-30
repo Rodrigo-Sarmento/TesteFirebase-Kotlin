@@ -30,11 +30,11 @@ class TelaPrincipal : AppCompatActivity() {
         binding.btGravarDadosDB.setOnClickListener {
 
             val usuariosMap = hashMapOf(
-                "nome" to "Marcos",
-                "sobrenome" to "Duarte Gomes",
+                "nome" to "Rodrigo",
+                "sobrenome" to "Sarmento",
                 "idade" to 28
             )
-            db.collection("Usuários").document("Marcos").set(usuariosMap)
+            db.collection("Usuários").document("Rodrigo").set(usuariosMap)
                 .addOnCompleteListener {
                     Log.d("db", "Sucesso ao salvar os dados do usuário!")
                 }.addOnFailureListener{
@@ -49,6 +49,13 @@ class TelaPrincipal : AppCompatActivity() {
                 }
 
             }
+        }
+
+        binding.btAtualizarDadosDB.setOnClickListener{
+            db.collection("Usuários").document("Marcos")
+                .update("nome", "campos").addOnCompleteListener{
+                    Log.d("db_update", "Sucesso ao atualizar os dados do usuário!")
+                }
         }
     }
 }
