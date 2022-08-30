@@ -57,5 +57,11 @@ class TelaPrincipal : AppCompatActivity() {
                     Log.d("db_update", "Sucesso ao atualizar os dados do usuário!")
                 }
         }
+
+        binding.btDeletarDadosDB.setOnClickListener{
+            db.collection("Usuários").document("Marcos").delete().addOnCompleteListener{
+                Log.d("db_delete", "Sucesso ao deletar os dados do usuário!")
+            }
+        }
     }
 }
